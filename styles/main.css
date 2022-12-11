@@ -1,0 +1,233 @@
+body {
+    font-family: 'Montserrat';
+}
+.container {
+    max-width: 1143px;
+    margin: 0 auto;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 11px;
+}
+.header-flex {
+    display: flex;
+    gap: 92px;
+    align-items: center;
+}
+.header-logo {
+    display: block;
+    background-image: url(../images/logo.svg);
+    width: 97px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header-nav {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+    gap: 54px;
+    align-items: center;
+}
+.header-nav a {
+    font-weight: 400;
+    font-size: 18px;
+    color: #2B3541;
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+.header-nav a:hover {
+    color: #181F27;
+    border-bottom: 1px solid #2B3541;
+}
+.header-links {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+}
+.header-links a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    transition: 0.3s;
+    transform: scale(1);
+    opacity: 0.8;
+}
+.inst {
+    background-image: url(../images/inst.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.fb {
+    background-image: url(../images/fb.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.header-links li {
+    margin-left: 30px;
+}
+.header-links a:hover {
+    transform: scale(1.2);
+    opacity: 1;
+ }
+.content {
+    margin-bottom: 164px;
+}
+.main {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.main-title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #2B3541;
+    width: 676px;
+    padding-top: 228px;
+    margin-top: 0;
+    margin-bottom: 44px;
+}
+.main-text span {
+    font-weight: 400;
+    font-size: 40px;
+    color: #2B3541;
+}
+.description {
+    margin-left: 92px;
+}
+.description-text {
+    width: 297px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #2B3541;
+    margin-top: 23px;
+    margin-bottom: 57px;
+}
+.main-link {
+    font-weight: 700;
+    font-size: 16px;
+    color: #2B3541;
+    background-color: #FBF138;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 23px 34px;
+    box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
+}
+.visual {
+    flex-grow: 1;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+.gym {
+    width: 464px;
+    height: 850px;
+    background: linear-gradient(90deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 145.23%);
+    opacity: 0.2;
+}
+.visual img {
+    position: absolute;
+    width: 210%;
+    height: 96%;
+    right: -172px;
+    top: 33px;
+}
+.arrow {
+    position: absolute;
+    background-image: url(../images/arrow.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 52px;
+    height: 55px;
+    left: 0;
+    bottom: 0;
+}
+.events-title {
+    font-weight: 700;
+    font-size: 40px;
+    color: #2B3541;
+    margin-top: 0;
+    margin-bottom: 42px;
+}
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.events-grid-box {
+    margin-left: 30px;
+    width: 260px;
+    padding-bottom: 306px;
+}
+.events-grid-time {
+    font-weight: 700;
+    font-size: 18px;
+    color: rgba(43, 53, 65, 0.6);
+    margin-top: 33px;
+    margin-bottom: 0;
+}
+.events-grid-title {
+    font-weight: 700;
+    font-size: 28px;
+    color: #2B3541;
+    line-height: 1.25;
+    margin-top: 23px;
+    margin-bottom: 40px;
+}
+.gradient {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(251, 241, 56, .3) 0%, rgba(253, 249, 182, 0) 100%);
+}
+.events-grid-marafon {
+    background-image: url(../images/events/maraphon.png);
+    width: 367.32px;
+    height: 598px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.events-grid-trainer {
+    background-image: url(../images/events/vebinar.png);
+    width: 367.32px;
+    height: 598px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.events-grid-yoga {
+    background-image: url(../images/events/yoga.png);
+    width: 367.32px;
+    height: 598px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.events-text {
+    display: flex;
+    justify-content: end;
+}
+.events-grid-text {
+    font-size: 18px;
+    color: #2B3541;
+    background: #FBF138;
+    padding: 13px 20px;
+}
+.events-btn-text {
+    font-weight: 700;
+    font-size: 16px;
+    color: #FBF138;
+    text-transform: uppercase;
+}
+.events-grid-btn {
+    background: #2B3541;
+    box-shadow: 0px 13px 24px rgba(70, 86, 106, 0.28);
+    border: none;
+    padding: 20px 49px;
+    cursor: pointer;
+    opacity: 0;
+}
