@@ -120,6 +120,11 @@ body {
     padding: 23px 34px;
     box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
 }
+.main-link:hover {
+    color: #FBF138;
+    background-color: #2B3541;
+    box-shadow: 0px 13px 24px rgba(70, 86, 106, 0.28);
+}
 .visual {
     flex-grow: 1;
     position: relative;
@@ -230,4 +235,60 @@ body {
     padding: 20px 49px;
     cursor: pointer;
     opacity: 0;
+}
+.scedule-header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 160px;
+}
+.scedule-title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 125%;
+    color: #2B3541;
+    margin-top: 0;
+    width: 356px;
+}
+.scedule-title-time {
+    font-weight: 700;
+    font-size: 28px;
+    color: #2B3541;
+    margin-top: 0;
+}
+.scedule-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 309px 73px 281px;
+    grid-template-areas: "a c e" "b c f" "b d f";
+    gap: 20px;
+}
+.scedule-grid-body {
+    grid-area: a;
+}
+.scedule-grid-jump {
+    grid-area: b;
+}
+.scedule-grid-bottle {
+    grid-area: c;
+}
+.scedule-grid-heart {
+    grid-area: d;
+}
+.scedule-grid-dumbbell {
+    grid-area: e;
+}
+.scedule-grid-weight {
+    grid-area: f;
+}
+.scedule-grid-item {
+    border: 1px solid rgba(43, 53, 65, 0.5);
+}
+.scedule-grid-time {
+    font-size: 18px;
+    color: rgba(1, 1, 1, 0.7);
+}
+.scedule-grid-title {
+    font-weight: 700;
+    font-size: 18px;
+    color: #2B3541;
 }
