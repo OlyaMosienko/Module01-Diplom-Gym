@@ -240,6 +240,7 @@ body {
     display: flex;
     justify-content: space-between;
     margin-top: 160px;
+    margin-bottom: 5px;
 }
 .scedule-title {
     font-weight: 700;
@@ -254,13 +255,23 @@ body {
     font-size: 28px;
     color: #2B3541;
     margin-top: 0;
+    padding-top: 15px;
 }
 .scedule-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 309px 73px 281px;
+    grid-template-rows: 308px 73px 281px;
     grid-template-areas: "a c e" "b c f" "b d f";
     gap: 20px;
+}
+.scedule-grid-item {
+    border: 1px solid rgba(43, 53, 65, 0.5);
+    padding: 20px 30px;
+}
+.scedule-grid-item:hover {
+    background: linear-gradient(180deg, rgba(251, 241, 56, 70%), rgba(253, 249, 182, 0.45) 100%);
+    box-shadow: 0px 13px 30px rgba(186, 180, 69, 0.2);
+    border: transparent;
 }
 .scedule-grid-body {
     grid-area: a;
@@ -280,15 +291,46 @@ body {
 .scedule-grid-weight {
     grid-area: f;
 }
-.scedule-grid-item {
-    border: 1px solid rgba(43, 53, 65, 0.5);
-}
 .scedule-grid-time {
     font-size: 18px;
     color: rgba(1, 1, 1, 0.7);
+    text-align: end;
+    margin: 0;
+}
+.body {
+    height: 65px;
+    width: 65px;
+    padding-top: 119px;
+}
+.jump {
+    height: 107px;
+    width: 67px;
+    padding-top: 142px;
+}
+.bottle {
+    width: 42px;
+    height: 85px;
+    padding-top: 191px;
+}
+.heart {
+    width: 65px;
+    height: 61px;
+    padding-top: 96px;
+}
+.dumbbell {
+    height: 50px;
+    width: 91px;
+    padding-top: 134px;
+}
+.weight {
+    width: 58px;
+    height: 66px;
+    padding-top: 184px;
 }
 .scedule-grid-title {
     font-weight: 700;
     font-size: 18px;
     color: #2B3541;
+    margin-top: 38px;
+    margin-bottom: 0;
 }
