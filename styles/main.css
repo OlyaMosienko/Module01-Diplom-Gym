@@ -166,10 +166,12 @@ body {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
+.events-grid-marafon, .events-grid-trainer, .events-grid-yoga {
+    position: relative;
+}
 .events-grid-box {
-    margin-left: 30px;
     width: 260px;
-    padding-bottom: 306px;
+    padding: 30px 0px 0px 30px;
 }
 .events-grid-time {
     font-weight: 700;
@@ -189,7 +191,13 @@ body {
 .gradient {
     width: 100%;
     height: 100%;
-    background: linear-gradient(180deg, rgba(251, 241, 56, .3) 0%, rgba(253, 249, 182, 0) 100%);
+    background: linear-gradient(180deg, rgba(251, 241, 56, 0.3), rgba(253, 249, 182, 0) 100%);
+}
+.gradient:hover {
+    background: linear-gradient(180deg, rgba(251, 241, 56, 0.6), rgba(253, 249, 182, 0) 100%);
+}
+.gradient:hover .events-grid-btn{
+    opacity: 1;
 }
 .events-grid-marafon {
     background-image: url(../images/events/maraphon.png);
@@ -213,8 +221,9 @@ body {
     background-repeat: no-repeat;
 }
 .events-text {
-    display: flex;
-    justify-content: end;
+    position: absolute;
+    right: 0;
+    bottom: 13px;
 }
 .events-grid-text {
     font-size: 18px;
@@ -235,6 +244,9 @@ body {
     padding: 20px 49px;
     cursor: pointer;
     opacity: 0;
+}
+.scedule {
+    margin-bottom: 160px;
 }
 .scedule-header {
     display: flex;
@@ -333,4 +345,55 @@ body {
     color: #2B3541;
     margin-top: 38px;
     margin-bottom: 0;
+}
+.subscribe {
+    background-color: #F3F3F3;
+}
+.subscribe-header {
+    position: relative;
+}
+.subscribe-header-item {
+    width: 53px;
+    height: 53px;
+    background: #FBF138;
+    border-radius: 100%;
+    position: absolute;
+    box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
+    left: 243px;
+    top: 64px;
+}
+.subscribe-title {
+    margin: 0;
+    padding-top: 84px;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    color: #2B3541;
+    position: relative;
+}
+.subscribe-email-agreement {
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.input-email {
+    font-size: 18px;
+    color: rgba(43, 53, 65, 0.3);
+    border-color: transparent;
+    padding: 19px 250px 19px 19px;
+}
+.subscribe-btn {
+    background: #FBF138;
+    box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.2);
+    border: none;
+    padding: 20px 43px;
+    cursor: pointer;
+}
+.subscribe-btn-text {
+    font-weight: 700;
+    font-size: 16px;
+    color: #2B3541;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 }
