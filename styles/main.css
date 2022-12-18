@@ -245,6 +245,13 @@ body {
     cursor: pointer;
     opacity: 0;
 }
+.events-grid-btn:hover {
+    background: #FBF138;
+    box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.2);
+}
+.events-grid-btn:hover .events-btn-text {
+    color: #2B3541;
+}
 .scedule {
     margin-bottom: 160px;
 }
@@ -348,6 +355,7 @@ body {
 }
 .subscribe {
     background-color: #F3F3F3;
+    padding-bottom: 85px;
 }
 .subscribe-header {
     position: relative;
@@ -376,19 +384,29 @@ body {
     display: flex;
     gap: 20px;
     justify-content: center;
+    height: 100%;
 }
 .input-email {
     font-size: 18px;
-    color: rgba(43, 53, 65, 0.3);
+    color: #2B3541;
     border-color: transparent;
-    padding: 19px 250px 19px 19px;
+    padding: 20px 128px 20px 19px;
+    margin-bottom: 17px;
 }
 .subscribe-btn {
     background: #FBF138;
     box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.2);
     border: none;
-    padding: 20px 43px;
+    padding: 23px 43px;
     cursor: pointer;
+    align-self: flex-start;
+}
+.subscribe-btn:hover {
+    background: #2B3541;
+    box-shadow: 0px 13px 24px rgba(43, 53, 65, 0.2);
+}
+.subscribe-btn:hover .subscribe-btn-text {
+    color: #FBF138;
 }
 .subscribe-btn-text {
     font-weight: 700;
@@ -396,4 +414,139 @@ body {
     color: #2B3541;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+}
+.agreement, .agreement a {
+    font-size: 11px;
+    color: rgba(43, 53, 65, 0.5);
+}
+.agreement a:hover {
+    color: rgba(43, 53, 65, 1);
+}
+.checkbox:checked,
+.checkbox:not(:checked) {
+   position: absolute;
+   left:-9999px;
+}
+.checkbox:checked + label,
+.checkbox:not(:checked) + label {
+   position: relative;
+   padding-left: 24px;
+   cursor: pointer;
+}
+.checkbox:checked + label::before {
+    content:'';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left:0;
+    top:calc(50% - 10px);
+    background-color: #2B3541;
+    border: 2px solid #2B3541;
+}
+.checkbox:checked + label::after{
+    content:'';
+    position: absolute;
+    width: 16px;
+    height: 12px;
+    transition: all .2s ease;
+    opacity: 1;
+    left: 2px;
+    top: calc(50% - 7px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../images/checked.svg);
+}
+.checkbox:not(:checked) + label::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 0;
+    top: calc(50% - 10px);
+    background-color: transparent;
+    border: 2px solid #2B3541;
+}
+.checkbox:not(:checked) + label::after{
+    content:'';
+    position: absolute;
+    width: 16px;
+    height: 12px;
+    transition: all .2s ease;
+    opacity: 0;
+    left: 4px;
+    top: calc(50% - 7px);
+    background-position: 0 -12px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/checked.svg);
+}
+.radio:checked + label::before{
+    border-radius: 100%;
+}
+.about {
+    margin-top: 162px;
+    margin-bottom: 170px;
+}
+.about-flex-image {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+.about-flex {
+    display: flex;
+    gap: 67px;
+}
+.about-text {
+    font-size: 18px;
+    color: #2B3541;
+    width: 483px;
+    line-height: 1.5;
+    margin-bottom: 34px;
+}
+.about-item h2 {
+    font-size: 40px;
+    color: #2B3541;
+    margin-top: 0;
+    margin-bottom: 22px;
+}
+.about-btn {
+    background: #FBF138;
+    box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.2);
+    border: none;
+    padding: 23px 54px;
+    cursor: pointer;
+}
+.about-btn-text {
+    font-weight: 700;
+    font-size: 16px;
+    color: #2B3541;
+    text-transform: uppercase;
+}
+.about-btn:hover {
+    background: #2B3541;
+    box-shadow: 0px 13px 24px rgba(43, 53, 65, 0.2);
+}
+.about-btn:hover .about-btn-text {
+    color: #FBF138;
+}
+.about-image {
+    background-image: url(../images/about.jpg);
+    width: 581px;
+    height: 336px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.about-item h3 {
+    font-weight: 700;
+    font-size: 18px;
+    color: #2B3541;
+    margin: 0;
+}
+.about-description {
+    font-size: 18px;
+    line-height: 1.5;
+    color: rgba(43, 53, 65, 0.6);
+    margin-top: 22px;
+    margin-bottom: 0;
 }
