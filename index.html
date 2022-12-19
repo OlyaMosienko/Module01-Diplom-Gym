@@ -19,9 +19,9 @@
                     <a href="#" class="header-logo"></a>
                 <nav>
                     <ul class="header-nav">
-                        <li><a href="#">Мероприятия</a></li>
-                        <li><a href="#">Расписание</a></li>
-                        <li><a href="#">О компании</a></li>
+                        <li><a href="#events" class="events-smooth">Мероприятия</a></li>
+                        <li><a href="#scedule" class="scedule-smooth">Расписание</a></li>
+                        <li><a href="#about" class="about-smooth">О компании</a></li>
                     </ul>
                 </nav>
                 </div>
@@ -40,19 +40,19 @@
                         <span>&gt; 15 тренировок</span>
                         <div class="description">
                         <p class="description-text">в области спортивной физиологии и нутрициологии</p>
-                        <a href="#" class="main-link">Узнать подробнее</a>
+                        <a href="#events" class="main-link">Узнать подробнее</a>
                         </div>
                     </div>
                     <div class="visual">
                         <div class="gym"></div>
                         <img src="images/girl.png" alt="girl">
                     </div>
-                    <a href="#" class="arrow"></a>
+                    <a href="#events" class="arrow"></a>
                 </div>
             </div>
         </div>
     <main>
-        <section class="events">
+        <section class="events" id="events">
             <div class="container">
                 <h2 class="events-title">Ближайшие события</h2>
                 <div class="events-grid">
@@ -101,7 +101,7 @@
                 </div>
             </div>
         </section>
-        <section class="scedule">
+        <section class="scedule" id="scedule">
             <div class="container">
                 <div class="scedule-header">
                     <h2 class="scedule-title">Расписание тренировок</h2>
@@ -173,7 +173,7 @@
                 </div>
             </div>
         </section>
-        <section class="about">
+        <section class="about" id="about">
             <div class="container">
                 <div class="about-flex-image">
                     <div class="about-item">
@@ -213,9 +213,9 @@
                     <a href="#" class="header-logo"></a>
                 <nav>
                     <ul class="header-nav">
-                        <li><a href="#">Мероприятия</a></li>
-                        <li><a href="#">Расписание</a></li>
-                        <li><a href="#">О компании</a></li>
+                        <li><a href="#events" class="events-smooth">Мероприятия</a></li>
+                        <li><a href="#scedule" class="scedule-smooth">Расписание</a></li>
+                        <li><a href="#about" class="about-smooth">О компании</a></li>
                     </ul>
                 </nav>
                 </div>
@@ -232,9 +232,24 @@
             </div>  
             <div class="footer-description">
                 <p>© 2022, Все права защищены</p>
-                <p>Сделано в рамках курса учебной платформы <a href="#">Annblok</a></p>
+                <p>Сделано в рамках курса учебной платформы <a href="https://frontendblok.com/" target="_blank">Annblok</a></p>
             </div>
         </div>
     </footer>
+    <script>
+        const links = document.querySelectorAll(".events-smooth, .scedule-smooth, .about-smooth");
+        for (const link of links) {
+            link.addEventListener("click", clickHandler);
+        }
+
+        function clickHandler(e) {
+            e.preventDefault();
+            const href = this.getAttribute("href");
+
+            document.querySelector(href).scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+    </script>
 </body>
 </html>
