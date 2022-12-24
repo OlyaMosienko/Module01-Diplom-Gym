@@ -26,6 +26,9 @@
             <div class="header">
                 <div class="header-flex">
                     <a href="#" class="header-logo"></a>
+                    <div class="header-burger">
+                        <button class="burger" onclick="openModal()"></button>
+                    </div>
                 <nav>
                     <ul class="header-nav">
                         <li><a href="#events" class="events-smooth">Мероприятия</a></li>
@@ -245,7 +248,26 @@
             </div>
         </div>
     </footer>
+    <div class="modal" id="modal">
+        <div class="header-flex">
+            <a href="#" class="header-logo"></a>
+            <button class="burger-close" onclick="closeModal()"></button>
+            <nav>
+                <ul class="header-nav">
+                    <li><a href="#events" class="events-smooth">Мероприятия</a></li>
+                    <li><a href="#scedule" class="scedule-smooth">Расписание</a></li>
+                    <li><a href="#about" class="about-smooth">О компании</a></li>
+                </ul>
+            </nav>
+        </div>
+        <ul class="header-links">
+            <li><a href="#" target="_blank" class="inst"></a></li>
+            <li><a href="#" target="_blank" class="fb"></a></li>
+        </ul>
+    </div>  
+        
     <script>
+        //Smooth scroll
         const links = document.querySelectorAll(".events-smooth, .scedule-smooth, .about-smooth");
         for (const link of links) {
             link.addEventListener("click", clickHandler);
@@ -258,6 +280,15 @@
             document.querySelector(href).scrollIntoView({
                 behavior: "smooth"
             });
+        }
+
+        //Modal
+        function openModal() {
+                document.getElementById("modal").style.top = "0px";
+            }
+
+        function closeModal() {
+            document.getElementById("modal").style.top = "-400px";
         }
     </script>
 </body>

@@ -33,7 +33,6 @@ body {
     align-items: center;
 }
 .header-nav a {
-    font-weight: 400;
     font-size: 18px;
     color: #2B3541;
     text-decoration: none;
@@ -619,6 +618,76 @@ footer .header-links a {
     color: rgba(43, 53, 65, 1);
 }
 
+/* Modal */
+
+.burger {
+    width: 29px;
+    height: 22px;
+    background-image: url(../images/burger.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.modal {
+    background-color: #F3F3F3;
+    max-width: 587px;
+    position: absolute;
+    top: -400px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .5s;
+}
+.modal .header-logo {
+    position: absolute;
+    top: 29px;
+    left: 10px;
+}
+.modal .header-nav {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 19px;
+    margin: 0;
+    padding: 93px 10px 86px 10px;
+}
+.modal .header-nav li {
+    content: '';
+    border-bottom: 1px solid rgba(43, 53, 65, 0.2);
+    width: 100%;
+    padding-bottom: 20px;
+}
+.modal .header-nav li:last-child {
+    border-bottom: none;
+    padding-bottom: 0px;
+}
+.modal .header-links {
+    position: absolute;
+    right: 11px;
+    bottom: 20px;
+    margin: 0;
+}
+.modal .header-links li {
+    margin-left: 20px;
+}
+.burger-close {
+    width: 22px;
+    height: 22px;
+    background-image: url(../images/close.svg);
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 0;
+    position: absolute;
+    top: 34px;
+    right: 10px;
+    cursor: pointer;
+
+}
+
 /* Responsive */
 
 @media (max-width: 1125px) {
@@ -709,5 +778,29 @@ footer .header-links a {
         gap: 65px;
     }
 }
-
-
+@media (max-width: 769px) {
+    .header {
+        margin-top: 31px;
+    }
+    .header-logo {
+        width: 78px;
+        height: 24px;
+    }
+    .header-links a {
+        width: 26px;
+        height: 26px;
+    }
+    .main-title {
+        font-size: 26px;
+        width: 358px;
+    }
+    .main-text span {
+        font-size: 26px;
+    }
+    .description {
+        margin-left: 0px;
+    }
+    .description-text {
+        font-size: 16px;
+    }
+}
