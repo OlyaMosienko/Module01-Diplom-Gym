@@ -266,14 +266,14 @@ body {
     font-size: 40px;
     line-height: 125%;
     color: #2B3541;
-    margin-top: 0;
+    margin: 0;
     width: 356px;
 }
 .scedule-title-time {
     font-weight: 700;
     font-size: 28px;
     color: #2B3541;
-    margin-top: 0;
+    margin: 0;
     padding-top: 15px;
 }
 .scedule-grid {
@@ -791,10 +791,10 @@ footer .header-links a {
     .header-flex {
         gap: 57px;
     }
-    .header nav {
+    header .header nav {
         display: none;
     }
-    .header-logo {
+    header .header-logo {
         width: 78px;
         height: 24px;
     }
@@ -841,6 +841,11 @@ footer .header-links a {
     }
     .events-title {
         font-size: 26px;
+        margin-bottom: 23px;
+    }
+    .events-grid {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
     }
     .events-grid-box {
         width: 135px;
@@ -860,5 +865,127 @@ footer .header-links a {
     .events-grid-text {
         font-size: 12px;
         padding: 6px 15px;
+    }
+    .events-grid-btn {
+        display: none;
+    }
+    .scedule-header {
+        margin-bottom: 38px;
+    }
+    .scedule-title {
+        font-size: 26px;
+        width: 200px;
+    }
+    .scedule-title-time {
+        font-size: 16px;
+        opacity: 0.7;
+        text-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    }
+    .scedule-grid {
+        display: grid;
+        grid-template-areas: 'a b' 'c d' 'e f';
+        gap: 20px 20px;
+    }
+    .scedule-grid-item {
+        padding: 20px 24px;
+    }
+    .scedule-grid-time {
+        font-size: 16px;
+    }
+    .scedule-grid-title {
+        font-size: 16px;
+        margin-top: 32px;
+    }
+    .body {
+        padding-top: 45px;
+    }
+    .jump {
+        padding-top: 4px;
+    }
+    .bottle {
+        padding-top: 23px;
+    }
+    .heart {
+        padding-top: 47px;
+    }
+    .dumbbell {
+        padding-top: 60px;
+    }
+    .weight {
+        padding-top: 43px;
+    }
+    .subscribe-title {
+        font-size: 26px;
+        width: 201px;
+        margin: 0 auto;
+        padding-top: 57px;
+    }
+    .subscribe-header-item {
+        width: 31px;
+        height: 31px;
+        left: 250px;
+        top: 43px;
+    }
+    .subscribe-email-agreement {
+        margin-top: 51px;
+        display: flex;
+        gap: 45px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .input-email {
+        padding: 20px 98px 20px 19px;
+        margin-bottom: 19px;
+    }
+    .subscribe-btn {
+        align-self: center;
+        padding: 24px 99px;
+    }
+    .about {
+        margin-top: 80px;
+    }
+    .about-flex {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 43px 137px;
+    }
+    .about-item h2 {
+        font-size: 26px;
+        margin-bottom: 17px;
+    }
+    .about-description {
+        max-width: 223px;
+    }
+    .about-text {
+        font-size: 16px;
+        width: 320px;
+        margin-bottom: 31px;
+    }
+    .about-btn {
+        padding: 24px 48px;
+    }
+    .about-image {
+        width: 372.85px;
+        height: 227px;
+    }
+    footer .header {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    footer .header-flex {
+        display: flex;
+        justify-content: space-between;
+    }
+    footer .header-nav a {
+        font-size: 12px;
+    }
+    footer .header-nav {
+        gap: 25px;
+    }
+    .footer-links {
+        display: flex;
+        align-items: center;
+        gap: 34px;
+        justify-content: flex-end;
     }
 }
