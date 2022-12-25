@@ -650,9 +650,10 @@ footer .header-links a {
 .modal .header-nav {
     flex-direction: column;
     justify-content: flex-start;
-    gap: 19px;
+    gap: 25px;
     margin: 0;
-    padding: 93px 10px 86px 10px;
+    padding: 97px 10px 86px 10px;
+    width: 35.5em;
 }
 .modal .header-nav li {
     content: '';
@@ -690,7 +691,7 @@ footer .header-links a {
 
 /* Responsive */
 
-@media (max-width: 1125px) {
+@media (max-width: 1124px) {
     .container {
         padding-left: 10px;
         padding-right: 10px;
@@ -719,7 +720,7 @@ footer .header-links a {
         display: flex;
     }
 }
-@media (max-width: 1113px) {
+@media (max-width: 1112px) {
     .container {
         max-width: 1100px;
     }
@@ -778,21 +779,43 @@ footer .header-links a {
         gap: 65px;
     }
 }
-@media (max-width: 769px) {
+@media (min-width: 769px) {
+    .header-burger {
+        display: none;
+    }
+}
+@media (max-width: 768px) {
     .header {
         margin-top: 31px;
+    }
+    .header-flex {
+        gap: 57px;
+    }
+    .header nav {
+        display: none;
     }
     .header-logo {
         width: 78px;
         height: 24px;
     }
+    .header-links li {
+        margin-left: 20px;
+    }
     .header-links a {
         width: 26px;
         height: 26px;
+        opacity: 1;
+    }
+    .header-links a:hover {
+        transform: none;
+     }
+    .content {
+        margin-bottom: 85px;
     }
     .main-title {
         font-size: 26px;
         width: 358px;
+        padding-top: 26px;
     }
     .main-text span {
         font-size: 26px;
@@ -802,5 +825,40 @@ footer .header-links a {
     }
     .description-text {
         font-size: 16px;
+    }
+    .gym {
+        height: 429px;
+        width: 359px;
+    }
+    .visual img {
+        width: 399px;
+        height: 364px;
+        top: 65px;
+    }
+    .arrow {
+        width: 38px;
+        height: 40px;
+    }
+    .events-title {
+        font-size: 26px;
+    }
+    .events-grid-box {
+        width: 135px;
+        padding: 20px 0px 0px 27px;
+    }
+    .events-grid-time {
+        font-size: 12px;
+    }
+    .events-grid-title {
+        font-size: 16px;
+        margin-top: 16px;
+    }
+    .events-text {
+        left: 0;
+        bottom: 13px;
+    }
+    .events-grid-text {
+        font-size: 12px;
+        padding: 6px 15px;
     }
 }
