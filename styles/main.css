@@ -230,6 +230,14 @@ body {
     background: #FBF138;
     padding: 13px 20px;
 }
+.events-grid-plus {
+    display: block;
+    position: absolute;
+    bottom: -4px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+}
 .events-btn-text {
     font-weight: 700;
     font-size: 16px;
@@ -787,6 +795,7 @@ footer .header-links a {
 @media (max-width: 768px) {
     .header {
         margin-top: 31px;
+        margin-bottom: 18px;
     }
     .header-flex {
         gap: 57px;
@@ -825,6 +834,8 @@ footer .header-links a {
     }
     .description-text {
         font-size: 16px;
+        margin-top: 19px;
+        margin-bottom: 64px;
     }
     .gym {
         height: 429px;
@@ -847,6 +858,9 @@ footer .header-links a {
         grid-template-columns: auto;
         grid-template-rows: auto;
     }
+    .events-grid-yoga {
+        height: 336px;
+    }
     .events-grid-box {
         width: 135px;
         padding: 20px 0px 0px 27px;
@@ -860,7 +874,7 @@ footer .header-links a {
     }
     .events-text {
         left: 0;
-        bottom: 13px;
+        bottom: 4px;
     }
     .events-grid-text {
         font-size: 12px;
@@ -871,6 +885,7 @@ footer .header-links a {
     }
     .scedule-header {
         margin-bottom: 38px;
+        margin-top: 81px;
     }
     .scedule-title {
         font-size: 26px;
@@ -914,6 +929,9 @@ footer .header-links a {
     .weight {
         padding-top: 43px;
     }
+    .subscribe {
+        padding-bottom: 38px;
+    }
     .subscribe-title {
         font-size: 26px;
         width: 201px;
@@ -943,18 +961,27 @@ footer .header-links a {
     }
     .about {
         margin-top: 80px;
+        margin-bottom: 92px;
     }
     .about-flex {
         display: flex;
         flex-wrap: wrap;
         gap: 43px 137px;
     }
+    .about-flex-image {
+        margin-bottom: 59px;
+    }
     .about-item h2 {
         font-size: 26px;
         margin-bottom: 17px;
     }
+    .about-item h3 {
+        font-size: 16px;
+    }
     .about-description {
         max-width: 223px;
+        font-size: 16px;
+        margin-top: 17px;
     }
     .about-text {
         font-size: 16px;
@@ -970,11 +997,13 @@ footer .header-links a {
     }
     footer .header {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
+        padding-top: 46px;
     }
     footer .header-flex {
         display: flex;
         justify-content: space-between;
+        width: 100%;
     }
     footer .header-nav a {
         font-size: 12px;
@@ -986,6 +1015,20 @@ footer .header-links a {
         display: flex;
         align-items: center;
         gap: 34px;
-        justify-content: flex-end;
+        align-self: flex-end;
+        padding-top: 24px;
+    }
+    .footer-mail-link {
+        font-size: 12px;
+    }
+    .footer-item {
+        width: 20px;
+        height: 20px;
+        left: -9px;
+        top: -6px;
+    }
+    .footer-description {
+        font-size: 10px;
+        margin-top: 33px;
     }
 }
