@@ -233,7 +233,7 @@ body {
 .events-grid-plus {
     display: block;
     position: absolute;
-    bottom: -4px;
+    bottom: -7px;
     right: 0;
     width: 30px;
     height: 30px;
@@ -791,6 +791,9 @@ footer .header-links a {
     .header-burger {
         display: none;
     }
+    .events-grid-plus {
+        display: none;
+    }
 }
 @media (max-width: 768px) {
     .header {
@@ -874,11 +877,11 @@ footer .header-links a {
     }
     .events-text {
         left: 0;
-        bottom: 4px;
+        bottom: 7px;
     }
     .events-grid-text {
         font-size: 12px;
-        padding: 6px 15px;
+        padding: 8px 15px;
     }
     .events-grid-btn {
         display: none;
@@ -1030,5 +1033,140 @@ footer .header-links a {
     .footer-description {
         font-size: 10px;
         margin-top: 33px;
+    }
+}
+@media (min-width: 376px) {
+    .visual360 {
+        display: none;
+    }
+}
+@media (max-width: 375px) {
+    .content {
+        margin-bottom: 113px;
+    }
+    .container {
+        max-width: 375px;
+    }
+    .main {
+        flex-direction: column;
+    }
+    .main-link {
+        padding: 23px 75px;
+    }
+    .visual {
+        display: none;
+    }
+    .visual360 {
+        margin-top: 41px;
+    }
+    .visual360 img {
+        width: 340px;
+        height: 284px;
+    }
+    .arrow {
+        display: none;
+    }
+    .events-grid-marafon {
+        background-size: 325%;
+        background-position: 44% 56%;
+    }
+    .events-grid-trainer {
+        background-position: 62% 91%;
+        background-size: 150%;
+    }
+    .events-grid-yoga {
+        background-image: url(../images/events/yoga3.png);
+    }
+    .scedule-header {
+        margin-top: 65px;
+        margin-bottom: 20px;
+    }
+    .scedule-grid {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+    }
+    .scedule-grid-item {
+        padding: 20px 20px;
+        position: relative;
+    }
+    .body {
+        height: 39px;
+        width: 39px;
+        position: absolute;
+        left: 20px;
+        bottom: 20px;
+    }
+    .jump {
+        height: 53px;
+        width: 34px;
+        position: absolute;
+        left: 20px;
+        bottom: 20px;
+    }
+    .bottle {
+        width: 23px;
+        height: 45px;
+        position: absolute;
+        left: 20px;
+        bottom: 20px;
+    }
+    .heart {
+        width: 39px;
+        height: 37px;
+        position: absolute;
+        left: 20px;
+        bottom: 20px;
+    }
+    .dumbbell {
+        height: 25px;
+        width: 46px;
+        position: absolute;
+        left: 20px;
+        bottom: 20px;
+    }
+    .weight {
+        width: 35px;
+        height: 40px;
+        position: absolute;
+        left: 20px;
+        bottom: 20px;
+    }
+    .scedule-grid-title {
+        padding-left: 58px;
+        margin-bottom: 8px;
+    }
+    .subscribe-header-item {
+        left: 55px;
+    }
+    .subscribe-email-agreement {
+        gap: 40px;
+    }
+    .about {
+        margin-top: 65px;
+        margin-bottom: 80px;
+    }
+    .about-image {
+        display: none;
+    }
+    .about-text {
+        width: 100%;
+    }
+    .about-btn {
+        width: 100%;
+    }
+    .about-flex {
+        gap: 40px;
+    }
+    .footer-description {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-description {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-description p {
+        margin-bottom: 16px;
     }
 }
