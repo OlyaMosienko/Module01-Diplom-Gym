@@ -1060,20 +1060,31 @@ footer .header-links a {
         flex-direction: column;
     }
     .main-link {
-        padding: 23px 75px;
+        display: block;
+        padding: 23px 69px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .description-text {
+        margin-bottom: 41px;
     }
     .visual {
         display: none;
     }
     .visual360 {
-        margin-top: 41px;
+        margin-top: 18px;
     }
     .visual360 img {
         width: 340px;
         height: 284px;
+        margin: 0 1vw;
     }
     .arrow {
         display: none;
+    }
+    .events-title {
+        margin-bottom: 19px;
     }
     .events-grid-marafon {
         background-size: 325%;
@@ -1085,6 +1096,9 @@ footer .header-links a {
     }
     .events-grid-yoga {
         background-image: url(../images/events/yoga3.png);
+    }
+    .scedule {
+        margin-bottom: 83px;
     }
     .scedule-header {
         margin-top: 65px;
@@ -1149,10 +1163,10 @@ footer .header-links a {
         left: 55px;
     }
     .subscribe-email-agreement {
-        gap: 40px;
+        gap: 45px;
     }
     .about {
-        margin-top: 65px;
+        margin-top: 67px;
         margin-bottom: 80px;
     }
     .about-image {
@@ -1172,18 +1186,21 @@ footer .header-links a {
     }
     footer .header-flex {
         flex-direction: column;
-        gap: 41px;
+        gap: 21px;
     }
     footer .header-nav {
         gap: 3em;
+        margin-bottom: 5px;
     }
     .footer-links {
         justify-content: space-between;
         width: 100%;
+        padding-top: 0;
     }
     .footer-description {
         flex-direction: column;
         align-items: center;
+        margin-top: 27px;
     }
     .footer-description {
         flex-direction: column;
