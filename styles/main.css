@@ -1044,12 +1044,12 @@ footer .header-links a {
         margin-top: 33px;
     }
 }
-@media (min-width: 376px) {
+@media (min-width: 391px) {
     .visual360 {
         display: none;
     }
 }
-@media (max-width: 375px) {
+@media (max-width: 390px) {
     .content {
         margin-bottom: 113px;
     }
