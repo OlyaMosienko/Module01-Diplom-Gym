@@ -806,6 +806,12 @@ footer .header-links a {
     header .header nav {
         display: none;
     }
+    .header-nav a {
+        color: #181F27;
+    }
+    .header-nav a:hover {
+        border-bottom: transparent;
+    }
     header .header-logo {
         width: 78px;
         height: 24px;
@@ -1021,6 +1027,9 @@ footer .header-links a {
         align-self: flex-end;
         padding-top: 24px;
     }
+    footer .header-links a {
+        opacity: 1;
+    }
     .footer-mail-link {
         font-size: 12px;
     }
@@ -1157,6 +1166,20 @@ footer .header-links a {
     }
     .about-flex {
         gap: 40px;
+    }
+    footer .header {
+        padding-top: 42px;
+    }
+    footer .header-flex {
+        flex-direction: column;
+        gap: 41px;
+    }
+    footer .header-nav {
+        gap: 3em;
+    }
+    .footer-links {
+        justify-content: space-between;
+        width: 100%;
     }
     .footer-description {
         flex-direction: column;
