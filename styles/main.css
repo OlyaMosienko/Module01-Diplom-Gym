@@ -804,11 +804,109 @@ footer .header-links a {
         gap: 65px;
     }
 }
-@media (min-width: 769px) {
-    .header-burger {
+@media (max-width: 1105px) {
+    .container {
+        max-width: 1050px;
+    }
+    .main-text {
+        max-width: 570px;
+    }
+    .visual img {
+        width: 50vw;
+        height: 63vh;
+    }
+}
+@media (min-width: 1001px) {
+    .events-grid-plus {
         display: none;
     }
-    .events-grid-plus {
+}
+@media (max-width: 1000px) {
+    .header {
+        margin-top: 15px;
+    }
+    .gym {
+        width: 100%;
+    }
+    .events-grid {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+    .events-grid-yoga {
+        height: 336px;
+    }
+    .events-grid-box {
+        width: 135px;
+        padding: 20px 0px 0px 27px;
+    }
+    .events-grid-time {
+        font-size: 12px;
+    }
+    .events-grid-title {
+        font-size: 16px;
+        margin-top: 16px;
+    }
+    .events-text {
+        left: 0;
+        bottom: 7px;
+    }
+    .events-grid-text {
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+    .events-grid-btn {
+        display: none;
+    }
+    .scedule-header {
+        margin-bottom: 38px;
+        margin-top: 100px;
+    }
+    .scedule-grid {
+        display: grid;
+        grid-template-areas: 'a b' 'c d' 'e f';
+        gap: 20px 20px;
+    }
+    .scedule-grid-item {
+        padding: 20px 24px;
+    }
+    .scedule-grid-time {
+        font-size: 16px;
+    }
+    .scedule-grid-title {
+        font-size: 16px;
+        margin-top: 32px;
+    }
+    .body {
+        padding-top: 45px;
+    }
+    .jump {
+        padding-top: 4px;
+    }
+    .bottle {
+        padding-top: 23px;
+    }
+    .heart {
+        padding-top: 47px;
+    }
+    .dumbbell {
+        padding-top: 60px;
+    }
+    .weight {
+        padding-top: 43px;
+    }
+}
+@media (max-width: 950px) {
+    .main-title {
+        font-size: 38px;
+    }
+    .visual img {
+    width: 43vw;
+    height: 50vh;
+    top: 108px;
+    }
+}
+@media (min-width: 769px) {
+    .header-burger {
         display: none;
     }
 }
@@ -880,39 +978,6 @@ footer .header-links a {
         font-size: 26px;
         margin-bottom: 23px;
     }
-    .events-grid {
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-    }
-    .events-grid-yoga {
-        height: 336px;
-    }
-    .events-grid-box {
-        width: 135px;
-        padding: 20px 0px 0px 27px;
-    }
-    .events-grid-time {
-        font-size: 12px;
-    }
-    .events-grid-title {
-        font-size: 16px;
-        margin-top: 16px;
-    }
-    .events-text {
-        left: 0;
-        bottom: 7px;
-    }
-    .events-grid-text {
-        font-size: 12px;
-        padding: 8px 15px;
-    }
-    .events-grid-btn {
-        display: none;
-    }
-    .scedule-header {
-        margin-bottom: 38px;
-        margin-top: 81px;
-    }
     .scedule-title {
         font-size: 26px;
         width: 200px;
@@ -921,39 +986,6 @@ footer .header-links a {
         font-size: 16px;
         opacity: 0.7;
         text-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
-    }
-    .scedule-grid {
-        display: grid;
-        grid-template-areas: 'a b' 'c d' 'e f';
-        gap: 20px 20px;
-    }
-    .scedule-grid-item {
-        padding: 20px 24px;
-    }
-    .scedule-grid-time {
-        font-size: 16px;
-    }
-    .scedule-grid-title {
-        font-size: 16px;
-        margin-top: 32px;
-    }
-    .body {
-        padding-top: 45px;
-    }
-    .jump {
-        padding-top: 4px;
-    }
-    .bottle {
-        padding-top: 23px;
-    }
-    .heart {
-        padding-top: 47px;
-    }
-    .dumbbell {
-        padding-top: 60px;
-    }
-    .weight {
-        padding-top: 43px;
     }
     .subscribe {
         padding-bottom: 38px;
