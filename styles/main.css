@@ -900,9 +900,46 @@ footer .header-links a {
         font-size: 38px;
     }
     .visual img {
-    width: 43vw;
-    height: 50vh;
-    top: 108px;
+        width: 43vw;
+        height: 50vh;
+        top: 108px;
+    }
+    .about-text {
+        width: 467px;
+    }
+    .about-flex {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 43px 137px;
+    }
+    .about-description {
+        max-width: 328px;
+    } 
+    footer .header {
+        display: flex;
+        flex-direction: column;
+        padding-top: 46px;
+    }
+    footer .header-flex {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .footer-links {
+        display: flex;
+        align-items: center;
+        gap: 34px;
+        align-self: flex-end;
+        padding-top: 24px;
+    }
+    footer .header-links a {
+        opacity: 1;
+    }
+    .footer-item {
+        width: 20px;
+        height: 20px;
+        left: -9px;
+        top: -6px;
     }
 }
 @media (min-width: 769px) {
@@ -1021,11 +1058,6 @@ footer .header-links a {
         margin-top: 80px;
         margin-bottom: 92px;
     }
-    .about-flex {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 43px 137px;
-    }
     .about-flex-image {
         margin-bottom: 59px;
     }
@@ -1053,40 +1085,14 @@ footer .header-links a {
         width: 372.85px;
         height: 227px;
     }
-    footer .header {
-        display: flex;
-        flex-direction: column;
-        padding-top: 46px;
-    }
-    footer .header-flex {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
+    footer .header-nav {
+        gap: 25px;
     }
     footer .header-nav a {
         font-size: 12px;
     }
-    footer .header-nav {
-        gap: 25px;
-    }
-    .footer-links {
-        display: flex;
-        align-items: center;
-        gap: 34px;
-        align-self: flex-end;
-        padding-top: 24px;
-    }
-    footer .header-links a {
-        opacity: 1;
-    }
     .footer-mail-link {
         font-size: 12px;
-    }
-    .footer-item {
-        width: 20px;
-        height: 20px;
-        left: -9px;
-        top: -6px;
     }
     .footer-description {
         font-size: 10px;
