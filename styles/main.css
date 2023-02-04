@@ -942,12 +942,12 @@ footer .header-links a {
         top: -6px;
     }
 }
-@media (min-width: 769px) {
+@media (min-width: 901px) {
     .header-burger {
         display: none;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .header {
         margin-top: 31px;
         margin-bottom: 18px;
@@ -978,9 +978,6 @@ footer .header-links a {
     }
     .header-links a:hover {
         transform: none;
-     }
-    .content {
-        margin-bottom: 85px;
     }
     .main-title {
         font-size: 26px;
@@ -999,13 +996,27 @@ footer .header-links a {
         margin-bottom: 64px;
     }
     .gym {
-        height: 429px;
-        width: 359px;
+        height: 425px;
+        width: 80%;
     }
     .visual img {
-        width: 399px;
-        height: 364px;
-        top: 65px;
+        width: 48vw;
+        height: 53vh;
+        top: 43px;
+    }
+}
+@media (max-width: 768px) {
+    .content {
+        margin-bottom: 85px;
+    }
+    .gym {
+        height: 419px;
+        width: 100%;
+    }
+    .visual img {
+        width: 49vw;
+        height: 46vh;
+        top: 87px;
     }
     .arrow {
         width: 38px;
