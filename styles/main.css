@@ -708,7 +708,7 @@ footer .header-links a {
 
 /* Responsive */
 
-@media (max-width: 1124px) {
+@media (max-width: 1286px) {
     .container {
         padding-left: 10px;
         padding-right: 10px;
@@ -718,7 +718,7 @@ footer .header-links a {
         height: 750px;
     }
     .visual img {
-        width: 212%;
+        width: 177%;
         height: 95%;
         right: -10px;
         top: 37px;
@@ -1110,58 +1110,23 @@ footer .header-links a {
         margin-top: 33px;
     }
 }
-@media (min-width: 391px) {
-    .visual360 {
-        display: none;
+@media (max-width: 700px) {
+    .header {
+        margin-top: 15px;
+        margin-bottom: 10px;
     }
-}
-@media (max-width: 390px) {
     .content {
-        margin-bottom: 113px;
+        margin-bottom: 50px;
     }
-    .container {
-        max-width: 375px;
+    .gym {
+        height: 383px;
     }
-    .main {
-        flex-direction: column;
-    }
-    .main-link {
-        display: block;
-        padding: 23px 69px;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .description-text {
-        margin-bottom: 41px;
-    }
-    .visual {
-        display: none;
-    }
-    .visual360 {
-        margin-top: 18px;
-    }
-    .visual360 img {
-        width: 340px;
-        height: 284px;
-        margin: 0 1vw;
+    .visual img {
+        width: 44vw;
+        height: 41vh;
     }
     .arrow {
         display: none;
-    }
-    .events-title {
-        margin-bottom: 19px;
-    }
-    .events-grid-marafon {
-        background-size: 325%;
-        background-position: 44% 56%;
-    }
-    .events-grid-trainer {
-        background-position: 62% 91%;
-        background-size: 150%;
-    }
-    .events-grid-yoga {
-        background-image: url(../images/events/yoga3.png);
     }
     .scedule {
         margin-bottom: 83px;
@@ -1225,18 +1190,16 @@ footer .header-links a {
         padding-left: 58px;
         margin-bottom: 8px;
     }
-    .subscribe-header-item {
-        left: 55px;
-    }
-    .subscribe-email-agreement {
-        gap: 45px;
+}
+@media (max-width: 620px) {
+    .visual img {
+        width: 48vw;
+        height: 39vh;
+        top: 101px;
     }
     .about {
         margin-top: 67px;
         margin-bottom: 80px;
-    }
-    .about-image {
-        display: none;
     }
     .about-text {
         width: 100%;
@@ -1244,8 +1207,42 @@ footer .header-links a {
     .about-btn {
         width: 100%;
     }
+    .about-image {
+        display: none;
+    }
+    .about-description {
+        max-width: 100%;
+    }
     .about-flex {
         gap: 40px;
+    }
+    .events-grid-marafon {
+        background-size: 200%;
+        background-position: center;
+    }
+    .events-grid-trainer {
+        background-position: 74% 75%;
+        background-size: 102%;
+    }
+    .events-grid-yoga {
+        background-image: url(../images/events/yoga3.png);
+        background-position: center;
+    }
+    .subscribe-header-item {
+        left: 55px;
+    }
+    .subscribe-email-agreement {
+        gap: 45px;
+    }
+}
+@media (max-width: 550px) {
+    .gym {
+        height: 350px;
+    }
+    .visual img {
+        width: 47vw;
+        height: 35vh;
+        top: 97px;
     }
     footer .header {
         padding-top: 42px;
@@ -1274,5 +1271,75 @@ footer .header-links a {
     }
     .footer-description p {
         margin-bottom: 16px;
+    }
+}
+@media (min-width: 501px) {
+    .visual360 {
+        display: none;
+    }
+}
+@media (max-width: 500px) {
+    .main {
+        flex-direction: column;
+    }
+    .main-link {
+        display: block;
+        padding: 23px 69px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .description-text {
+        margin-bottom: 41px;
+    }
+    .visual {
+        display: none;
+    }
+    .visual360 {
+        margin-top: 18px;
+    }
+    .visual360 img {
+        width: 91vw;
+        height: 100%;
+        margin: 0 1vw;
+    }
+    .events-title {
+        margin-bottom: 19px;
+    }
+    .events-grid-marafon {
+        background-size: 325%;
+        background-position: 44% 56%;
+    }
+    .events-grid-trainer {
+        background-position: 62% 91%;
+        background-size: 150%;
+    }
+    .about-description {
+        max-width: 223px;
+    }
+}
+@media (max-width: 390px) {
+    .content {
+        margin-bottom: 113px;
+    }
+    .container {
+        max-width: 375px;
+    }
+}
+@media (max-width: 360px) {
+    .container {
+        max-width: 354px;
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+    .content {
+        margin-bottom: 65px;
+    }
+    .main-title {
+        font-size: 24px;
+        width: 100%;
+    }
+    .events-grid {
+        gap: 10px 8px;
     }
 }
