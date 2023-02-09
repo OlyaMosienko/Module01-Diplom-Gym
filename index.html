@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/main.css">
 </head>
-<body>
+<body id="body">
     <header>
         <div class="container">
             <div class="header">
@@ -297,10 +297,12 @@
         //Modal
         function openModal() {
                 document.getElementById("modal").style.top = "0px";
+                document.getElementById("body").className = "hidden";
             }
 
         function closeModal() {
             document.getElementById("modal").style.top = "-400px";
+            document.getElementById("body").className = " ";
         }
     </script>
 </body>
