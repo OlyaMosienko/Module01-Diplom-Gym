@@ -1277,9 +1277,7 @@ footer .header-links a {
         height: 350px;
     }
     .visual img {
-        width: 38vw;
-        height: 25vh;
-        top: 170px;
+        display: none;
     }
     footer .header {
         padding-top: 42px;
