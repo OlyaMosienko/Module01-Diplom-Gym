@@ -38,6 +38,7 @@ body {
     text-decoration: none;
     padding-bottom: 10px;
     transition: .2s;
+    border-bottom: 1px solid transparent;
 }
 .header-nav a:hover {
     color: #181F27;
@@ -140,10 +141,10 @@ body {
 }
 .visual img {
     position: absolute;
-    width: 210%;
-    height: 96%;
+    width: 64vw;
+    height: auto;
     right: -172px;
-    top: 33px;
+    bottom: 0;
 }
 .arrow {
     position: absolute;
@@ -739,10 +740,8 @@ footer .header-links a {
         height: 750px;
     }
     .visual img {
-        width: 177%;
-        height: 95%;
+        width: 66vw;
         right: -10px;
-        top: 37px;
     }
     .content {
         margin-bottom: 100px;
@@ -758,12 +757,12 @@ footer .header-links a {
         display: flex;
     }
 }
-@media (max-width: 1150px) {
-    .visual img {
-        width: 177%;
-        height: 87%;
-        right: -10px;
-        top: 97px;
+@media (max-width: 1160px) {
+    .main-title {
+        font-size: 40px;
+    }
+    .main-text span {
+        font-size: 35px;
     }
 }
 @media (max-width: 1112px) {
@@ -775,17 +774,15 @@ footer .header-links a {
         width: 400px;
     }
     .visual img {
-        width: 136%;
-        height: 97%;
+        width: 49vw;
         right: 0px;
-        top: 14px;
     }
     .main-title {
-        font-size: 40px;
+        font-size: 35px;
         padding-top: 65px;
     }
     .main-text span {
-        font-size: 35px;
+        font-size: 33px;
     }
     .description-text {
         font-size: 17px;
@@ -839,10 +836,6 @@ footer .header-links a {
     }
     .main-text {
         max-width: 570px;
-    }
-    .visual img {
-        width: 50vw;
-        height: 63vh;
     }
 }
 @media (min-width: 1001px) {
@@ -925,14 +918,6 @@ footer .header-links a {
     }
 }
 @media (max-width: 950px) {
-    .main-title {
-        font-size: 38px;
-    }
-    .visual img {
-        width: 43vw;
-        height: 50vh;
-        top: 108px;
-    }
     .about-text {
         width: 467px;
     }
@@ -1026,19 +1011,6 @@ footer .header-links a {
     }
     .gym {
         height: 425px;
-        width: 80%;
-    }
-    .visual img {
-        width: 48vw;
-        height: 53vh;
-        top: 43px;
-    }
-}
-@media (max-width: 800px) {
-    .visual img {
-        width: 48vw;
-        height: 51vh;
-        top: 59px;
     }
 }
 
@@ -1047,13 +1019,12 @@ footer .header-links a {
         margin-bottom: 85px;
     }
     .gym {
-        height: 419px;
+        height: 428px;
         width: 100%;
     }
     .visual img {
-        width: 49vw;
-        height: 46vh;
-        top: 87px;
+        width: 51vw;
+        right: -10px;
     }
     .arrow {
         width: 38px;
@@ -1159,8 +1130,6 @@ footer .header-links a {
     }
     .visual img {
         width: 44vw;
-        height: 39vh;
-        top: 104px;
     }
     .arrow {
         display: none;
@@ -1229,10 +1198,8 @@ footer .header-links a {
     }
 }
 @media (max-width: 620px) {
-    .visual img {
-        width: 48vw;
-        height: 37vh;
-        top: 118px;
+    .gym {
+        height: 345px;
     }
     .about {
         margin-top: 67px;
@@ -1274,10 +1241,7 @@ footer .header-links a {
 }
 @media (max-width: 550px) {
     .gym {
-        height: 350px;
-    }
-    .visual img {
-        display: none;
+        height: 340px;
     }
     footer .header {
         padding-top: 42px;
@@ -1389,5 +1353,31 @@ footer .header-links a {
     }
     .main-link {
         padding: 23px 10px;
+    }
+}
+@media (max-width: 350px) {
+    .container {
+        max-width: 320px;
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+    .main-title {
+        font-size: 22px;
+    }
+    .events-grid {
+        gap: 5px;
+    }
+    .events-grid-box {
+        width: 125px;
+        padding: 15px 0px 0px 15px;
+    }
+    .input-email {
+        padding: 20px 60px 20px 19px;
+    }
+    .subscribe-btn {
+        padding: 24px 77px;
+    }
+    footer .header-nav {
+        gap: 20px;
     }
 }
